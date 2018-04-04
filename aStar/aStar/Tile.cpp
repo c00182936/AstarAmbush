@@ -21,6 +21,11 @@ Tile::Tile(int xPos, int yPos, float w, float h, bool active)
 	m_f = std::numeric_limits<int>::infinity();
 	m_h = std::numeric_limits<int>::infinity();
 	m_g = std::numeric_limits<int>::infinity();
+	rectangle.x = m_position.x;
+	rectangle.y = m_position.y;
+	rectangle.w = m_size.x;
+	rectangle.h = m_size.y;
+	
 }
 
 

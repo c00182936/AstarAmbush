@@ -2,6 +2,7 @@
 #include "SDL2-2.0.7\include\SDL.h"
 #include "Tile.h"
 #include <vector>
+#include "GridTemplate.h"
 class Game
 {
 private:

@@ -32,4 +32,5 @@ int main()
 			SDL_Delay(FRAME_DELAY - FRAME_TIME);
 		}
 	}
+	return 0;
 }

@@ -6,6 +6,7 @@
 #include <array>
 #include <limits>
 #include "CD_Vector2f.h"
+#include "SDL2-2.0.7\include\SDL.h"
 class Tile
 {
 public:
@@ -36,6 +37,11 @@ public:
 	void setF(float f) { m_f = f; };
 	void setH(float h) { m_h = h; };
 	void setG(float g) { m_g = g; };
+	CD_Vector m_gridPosition;
+	CD_Vector m_position;
+	CD_Vector m_size;
+	CD_Vector m_origin;
+	SDL_Rect rectangle;
 	bool operator==(const Tile other)
 	{
 		if (this->m_position == other.m_position)
@@ -48,10 +54,6 @@ public:
 		}
 	}
 private:
-	CD_Vector m_gridPosition;
-	CD_Vector m_position;
-	CD_Vector m_size;
-	CD_Vector m_origin;
 	float m_f; //g + h
 	float m_g; //total cost from start
 	float m_h; //heuristic value
