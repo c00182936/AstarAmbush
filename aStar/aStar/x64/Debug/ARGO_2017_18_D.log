@@ -1,0 +1,161 @@
+﻿F:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(387,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (ARGO_2017_18_D.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Tile.cpp
+g:\git\y4\astar\astarambush\astar\astar\tile.h(30): warning C4244: '=': conversion from 'std::numeric_limits<int>::_Ty' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\tile.h(31): warning C4244: '=': conversion from 'std::numeric_limits<int>::_Ty' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\tile.h(32): warning C4244: '=': conversion from 'std::numeric_limits<int>::_Ty' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\tile.cpp(12): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\tile.cpp(13): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\tile.cpp(21): warning C4244: '=': conversion from 'std::numeric_limits<int>::_Ty' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\tile.cpp(22): warning C4244: '=': conversion from 'std::numeric_limits<int>::_Ty' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\tile.cpp(23): warning C4244: '=': conversion from 'std::numeric_limits<int>::_Ty' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\tile.cpp(24): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\tile.cpp(25): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\tile.cpp(26): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\tile.cpp(27): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  stdafx.cpp
+  SpriteComponent.cpp
+g:\git\y4\astar\astarambush\astar\astar\positioncomponent.h(224): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\positioncomponent.h(233): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\spritecomponent.cpp(12): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\spritecomponent.cpp(13): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\spritecomponent.cpp(33): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\spritecomponent.cpp(34): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\spritecomponent.cpp(47): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\spritecomponent.cpp(48): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\spritecomponent.cpp(56): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\spritecomponent.cpp(80): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\spritecomponent.cpp(81): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\spritecomponent.cpp(87): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\spritecomponent.cpp(88): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\spritecomponent.cpp(100): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\spritecomponent.cpp(101): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\spritecomponent.cpp(113): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\spritecomponent.cpp(114): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  Sprite.cpp
+g:\git\y4\astar\astarambush\astar\astar\sprite.cpp(59): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\sprite.cpp(60): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\sprite.cpp(66): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\sprite.cpp(67): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\sprite.cpp(79): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\sprite.cpp(80): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\sprite.cpp(92): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\sprite.cpp(93): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  SoundComponent.cpp
+  RenderComponent.cpp
+  Pathfinder.cpp
+g:\git\y4\astar\astarambush\astar\astar\tile.h(30): warning C4244: '=': conversion from 'std::numeric_limits<int>::_Ty' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\tile.h(31): warning C4244: '=': conversion from 'std::numeric_limits<int>::_Ty' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\tile.h(32): warning C4244: '=': conversion from 'std::numeric_limits<int>::_Ty' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\pathfinder.cpp(108): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\pathfinder.cpp(109): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\pathfinder.cpp(189): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\pathfinder.cpp(194): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\pathfinder.cpp(202): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\pathfinder.cpp(219): warning C4101: 'roomSize': unreferenced local variable
+  main.cpp
+g:\git\y4\astar\astarambush\astar\astar\aibehaviour.h(26): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\aibehaviour.h(27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\aibehaviour.h(35): warning C4244: '=': conversion from 'std::numeric_limits<int>::_Ty' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\aibehaviour.h(36): warning C4244: '=': conversion from 'std::numeric_limits<int>::_Ty' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\aibehaviour.h(37): warning C4244: '=': conversion from 'std::numeric_limits<int>::_Ty' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\aibehaviour.h(64): warning C4244: '=': conversion from 'std::numeric_limits<int>::_Ty' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\aibehaviour.h(65): warning C4244: '=': conversion from 'std::numeric_limits<int>::_Ty' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\aibehaviour.h(66): warning C4244: '=': conversion from 'std::numeric_limits<int>::_Ty' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\positioncomponent.h(224): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\positioncomponent.h(233): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\weaponcomponent.h(37): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\weaponcomponent.h(38): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\weaponcomponent.h(58): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\weaponcomponent.h(64): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\weaponcomponent.h(120): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\weaponcomponent.h(125): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\systemtemplate.h(22): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\systemtemplate.h(31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\collisions.h(70): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\collisions.h(71): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\collisions.h(110): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\collisions.h(115): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\collisions.h(120): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\collisions.h(125): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\inputsystem.h(694): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\inputsystem.h(695): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\inputsystem.h(701): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\aisystem.h(118): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\tile.h(30): warning C4244: '=': conversion from 'std::numeric_limits<int>::_Ty' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\tile.h(31): warning C4244: '=': conversion from 'std::numeric_limits<int>::_Ty' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\tile.h(32): warning C4244: '=': conversion from 'std::numeric_limits<int>::_Ty' to 'float', possible loss of data
+  LevelLoader.cpp
+g:\git\y4\astar\astarambush\astar\astar\levelloader.cpp(160): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\levelloader.cpp(190): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  JSONValue.cpp
+  JSON.cpp
+  Game.cpp
+g:\git\y4\astar\astarambush\astar\astar\aibehaviour.h(26): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\aibehaviour.h(27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\aibehaviour.h(35): warning C4244: '=': conversion from 'std::numeric_limits<int>::_Ty' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\aibehaviour.h(36): warning C4244: '=': conversion from 'std::numeric_limits<int>::_Ty' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\aibehaviour.h(37): warning C4244: '=': conversion from 'std::numeric_limits<int>::_Ty' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\aibehaviour.h(64): warning C4244: '=': conversion from 'std::numeric_limits<int>::_Ty' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\aibehaviour.h(65): warning C4244: '=': conversion from 'std::numeric_limits<int>::_Ty' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\aibehaviour.h(66): warning C4244: '=': conversion from 'std::numeric_limits<int>::_Ty' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\positioncomponent.h(224): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\positioncomponent.h(233): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\weaponcomponent.h(37): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\weaponcomponent.h(38): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\weaponcomponent.h(58): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\weaponcomponent.h(64): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\weaponcomponent.h(120): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\weaponcomponent.h(125): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\systemtemplate.h(22): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\systemtemplate.h(31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\collisions.h(70): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\collisions.h(71): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\collisions.h(110): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\collisions.h(115): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\collisions.h(120): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\collisions.h(125): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\inputsystem.h(694): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\inputsystem.h(695): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\inputsystem.h(701): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\aisystem.h(118): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\tile.h(30): warning C4244: '=': conversion from 'std::numeric_limits<int>::_Ty' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\tile.h(31): warning C4244: '=': conversion from 'std::numeric_limits<int>::_Ty' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\tile.h(32): warning C4244: '=': conversion from 'std::numeric_limits<int>::_Ty' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\game.cpp(44): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\game.cpp(45): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  ECS.cpp
+  CD_Vector2f.cpp
+  BulletHandler.cpp
+  AnimationComponent.cpp
+g:\git\y4\astar\astarambush\astar\astar\positioncomponent.h(224): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\positioncomponent.h(233): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\animationcomponent.cpp(34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\animationcomponent.cpp(41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\animationcomponent.cpp(48): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\animationcomponent.cpp(55): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\animationcomponent.cpp(101): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\animationcomponent.cpp(102): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\animationcomponent.cpp(128): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\animationcomponent.cpp(129): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\animationcomponent.cpp(156): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\animationcomponent.cpp(157): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\animationcomponent.cpp(182): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\animationcomponent.cpp(183): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  AIBehaviour.cpp
+g:\git\y4\astar\astarambush\astar\astar\aibehaviour.h(26): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\aibehaviour.h(27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\aibehaviour.h(35): warning C4244: '=': conversion from 'std::numeric_limits<int>::_Ty' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\aibehaviour.h(36): warning C4244: '=': conversion from 'std::numeric_limits<int>::_Ty' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\aibehaviour.h(37): warning C4244: '=': conversion from 'std::numeric_limits<int>::_Ty' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\aibehaviour.h(64): warning C4244: '=': conversion from 'std::numeric_limits<int>::_Ty' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\aibehaviour.h(65): warning C4244: '=': conversion from 'std::numeric_limits<int>::_Ty' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\aibehaviour.h(66): warning C4244: '=': conversion from 'std::numeric_limits<int>::_Ty' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\aibehaviour.cpp(45): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\aibehaviour.cpp(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\aibehaviour.cpp(110): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\aibehaviour.cpp(115): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+g:\git\y4\astar\astarambush\astar\astar\aibehaviour.cpp(123): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Generating Code...
+     Creating library G:\git\y4\aStar\AstarAmbush\aStar\x64\Debug\aStarAmbush.lib and object G:\git\y4\aStar\AstarAmbush\aStar\x64\Debug\aStarAmbush.exp
+  ARGO_2017_18_D.vcxproj -> G:\git\y4\aStar\AstarAmbush\aStar\x64\Debug\aStarAmbush.exe
+  ARGO_2017_18_D.vcxproj -> G:\git\y4\aStar\AstarAmbush\aStar\x64\Debug\aStarAmbush.pdb (Partial PDB)

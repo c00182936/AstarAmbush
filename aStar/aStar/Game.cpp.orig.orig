@@ -1,0 +1,248 @@
+#include "Game.h"
+
+
+Game::Game() : loader(std::string("GeneralGameData.json"))
+{
+	TextureManager = TextureHandler::Instance();
+}
+
+Game::~Game()
+{
+
+}
+
+
+void Game::init(int width, int height)
+{
+	loader.LoadAll();
+
+	factory = new EntityFactory();
+	CollisionSystem = new Collisions;
+
+	manager = EntityManager();
+	if (SDL_Init(SDL_INIT_EVERYTHING) == 0)
+	{
+		window = SDL_CreateWindow("ARGO_D", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, 0);
+		renderer = SDL_CreateRenderer(window, -1, 0);
+		if (renderer)
+		{
+			SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+		}
+		isRunning = true;
+	}
+
+	for (map<string, string>::iterator iter = GameData::m_sprites.begin(); iter != GameData::m_sprites.end(); iter++)
+	{
+		TextureManager->addTexture(iter->first, iter->second, renderer);
+	}
+	
+	bulletHandler = BulletHandler();
+	enemyBulletHandler = BulletHandler();
+	inputSys = InputSystem();
+	moveSys = MovementSystem();
+	aiSys = AISystem();
+
+	TestWorld = new World;
+	TestWorld->init(0);
+<<<<<<< HEAD
+
+	Player = factory->CreatePlayerEntity(CD_Vector(500,500), "characterSpecOps",TextureManager, manager, CollisionSystem);
+
+=======
+	lvlManager = new LevelManager();
+	lvlManager->setWorld(TestWorld);
+	Player = &manager.addEntity(factory->CreatePlayerEntity(CD_Vector(500, 500), "characterSpecOps", TextureManager));
+>>>>>>> ea049245db78cba8c0587f51aac407be74443ba7
+	inputSys.addEntity(Player);
+	inputSys.SetBulletHandler(&bulletHandler);
+	moveSys.addEntity(Player);
+	//Player.addComponent<PositionComponent>(80,80);
+	//Player.addComponent<RenderComponent>();
+	//Player.addComponent<InputComponent>();
+	//Player.addComponent<SoundComponent>();
+	//Player.addComponent<MovementComponent>(0.2f, 1.0f);
+	//Player.addComponent<SpriteComponent>(TextureManager->getTexture("characterSpecOps"), SDL_Rect{ 0, 0, 140, 136 }, 32.0f, 32.0f);
+	//Player.addComponent<AnimationComponent>();
+	//Player.addComponent<WeaponComponent>();
+	//Player.getComponent<WeaponComponent>().setGunValues(100, 40, 25, 300, 600, 0);
+	//Player.getComponent<AnimationComponent>().addAnimation(AnimTypes::Idle, 1, 140, 280, 0);
+	//Player.getComponent<AnimationComponent>().addAnimation(AnimTypes::Firing, 1, 140, 280, 136);
+	//Player.getComponent<SoundComponent>().AddSound("Gun", 100);
+
+
+
+
+	inputSys.addEntity(Player);
+	inputSys.SetBulletHandler(&bulletHandler);
+	moveSys.addEntity(Player);
+	
+	//Enemy creation.
+
+	auto& enemy(manager.CreateEntity());
+	enemy.addComponent<PositionComponent>(320, 480);
+	enemy.addComponent<RenderComponent>();
+	enemy.addComponent<AIComponent>(AISystem::aiTypes::ALLY);
+	enemy.getComponent<AIComponent>().setTarget(Player);
+	enemy.addComponent<MovementComponent>(0.1f, 0.8f);
+	enemy.addComponent<SpriteComponent>(TextureManager->getTexture("characterSpecOps"), SDL_Rect{ 0, 0, 136, 136 }, 32.0f, 32.0f);
+	enemy.addComponent<WeaponComponent>();
+	enemy.getComponent<WeaponComponent>().setGunValues(1000, 50, 30, 500, 1000, 0);
+	enemy.addComponent<StatComponent>(100, 25, 0);
+	enemy.addGroup(Groups::EnemyGroup);
+
+	Enemy = &enemy;
+	aiSys.addEntity(Enemy);
+	aiSys.SetBulletHandler(&enemyBulletHandler);
+	aiSys.InitializePathfinder();
+	moveSys.addEntity(Enemy);
+<<<<<<< HEAD
+	CollisionSystem->addEntity(Enemy);
+=======
+
+
+	float tempPortalX=TestWorld->getDimentions().w;
+	tempPortalX /= 2;
+	float portalRad = tempPortalX;
+	tempPortalX *= 11;
+	tempPortal1.addComponent<PositionComponent>(0, 0);
+	tempPortal1.getComponent<PositionComponent>().setCircleDimensions(CD_Vector{ tempPortalX-portalRad, portalRad }, portalRad*2, 0);
+	tempPortal1.addComponent<SpriteComponent>(TextureManager->getTexture("Portal"), SDL_Rect{ 0,0,800,800 }, 128, 128);
+	lvlManager->addEntity(&tempPortal1);
+	tempPortal2.addComponent<PositionComponent>(0,0);
+	tempPortal2.getComponent<PositionComponent>().setCircleDimensions(CD_Vector{ tempPortalX*2 - portalRad*3,tempPortalX - portalRad }, portalRad*2, 0);
+	tempPortal2.addComponent<SpriteComponent>(TextureManager->getTexture("Portal"), SDL_Rect{ 0,0,800,800 }, 128, 128);
+	lvlManager->addEntity(&tempPortal2);
+	tempPortal3.addComponent<PositionComponent>(0,0);
+	tempPortal3.getComponent<PositionComponent>().setCircleDimensions(CD_Vector{ portalRad,tempPortalX - portalRad }, portalRad*2, 0);
+	tempPortal3.addComponent<SpriteComponent>(TextureManager->getTexture("Portal"), SDL_Rect{ 0,0,800,800 }, 128, 128);
+	lvlManager->addEntity(&tempPortal3);
+	tempPortal4.addComponent<PositionComponent>(0, 0);
+	tempPortal4.getComponent<PositionComponent>().setCircleDimensions(CD_Vector{ tempPortalX - portalRad,(tempPortalX*2) - portalRad*3 }, portalRad*2, 0);
+	tempPortal4.addComponent<SpriteComponent>(TextureManager->getTexture("Portal"), SDL_Rect{ 0,0,800,800 }, 128, 128);
+	lvlManager->addEntity(&tempPortal4);
+>>>>>>> ea049245db78cba8c0587f51aac407be74443ba7
+}
+
+void Game::Update()
+{
+	//Get Mouse X,Y
+	inputSys.update();
+	aiSys.update();
+	SDL_GetMouseState(&mouseX, &mouseY);
+	manager.update();
+	moveSys.update();
+	CollisionSystem->update();
+	int x = Player->getComponent<PositionComponent>().GetXPosition() + (Player->getComponent<SpriteComponent>().getScreenCoords().w / 2);
+	int y = Player->getComponent<PositionComponent>().GetYPosition() + (Player->getComponent<SpriteComponent>().getScreenCoords().h / 2);
+	bulletHandler.UpdateWithComponent(SDL_Point{ x, y }, SDL_Point{ mouseX,mouseY }, Player->getComponent<WeaponComponent>());
+	x = Enemy->getComponent<PositionComponent>().GetPosition().x + (Player->getComponent<SpriteComponent>().getScreenCoords().w / 2);
+	y = Enemy->getComponent<PositionComponent>().GetPosition().y + (Player->getComponent<SpriteComponent>().getScreenCoords().h / 2);
+	enemyBulletHandler.UpdateWithComponent(SDL_Point{ x, y }, 
+		SDL_Point{ (int)Player->getComponent<PositionComponent>().GetPosition().x, (int)Player->getComponent<PositionComponent>().GetPosition().y }, 
+		Enemy->getComponent<WeaponComponent>());
+
+	//onlineClient.Update();
+<<<<<<< HEAD
+	CollisionSystem->WallCollision(TestWorld->getWalls());
+
+	for (int i = 0; i < bulletHandler.GetBullets()->size(); i++)
+	{
+		SDL_Rect bullet = bulletHandler.GetBullets()->at(i)->m_dst;
+
+		// Wall Collision
+		if(Collisions::BulletWall(bullet, TestWorld->getWalls()))
+		{
+			bulletHandler.GetBullets()->at(i)->Reset();
+		}
+
+		CollisionSystem->BulletCollision(bulletHandler.GetBullets()->at(i), "PlayerBullet");
+	}
+
+	for (int i = 0; i < enemyBulletHandler.GetBullets()->size(); i++)
+	{
+		SDL_Rect bullet = enemyBulletHandler.GetBullets()->at(i)->m_dst;
+
+		if (Collisions::BulletWall(bullet, TestWorld->getWalls()))
+		{
+			enemyBulletHandler.GetBullets()->at(i)->Reset();
+		}
+
+		CollisionSystem->BulletCollision(enemyBulletHandler.GetBullets()->at(i), "EnemyBullet");
+	}
+
+	//manager.refresh();
+=======
+	Collisions::WallCollision(Player, TestWorld->getWalls());
+	Collisions::WallCollision(Enemy, TestWorld->getWalls());
+	lvlManager->checkCollision(Player);
+>>>>>>> ea049245db78cba8c0587f51aac407be74443ba7
+}
+
+void Game::Draw()
+{
+	SDL_SetRenderDrawColor(renderer, 240, 240, 240, 255);
+	SDL_RenderClear(renderer);
+
+	TestWorld->RenderWorld(renderer);
+
+	//Bullets
+	bulletHandler.Render(renderer);
+	enemyBulletHandler.Render(renderer);
+
+	//Player
+	manager.Draw(renderer);
+<<<<<<< HEAD
+=======
+	lvlManager->draw(renderer);
+>>>>>>> ea049245db78cba8c0587f51aac407be74443ba7
+	
+	SDL_RenderPresent(renderer);
+}
+
+/// <summary>
+/// Placeholder function to be removed later when properly implemented.
+/// Press a number key from 1-5 or 0 to change levels as follows:
+/// 0:	Displays the "starting" room. This will always be an empty room. 
+/// 1-2:Displays a random "easy" room, which may include the empty one.
+/// 3-4:Displays a random "normal" room. 
+/// 5:	Displays a random "hard" room. 
+/// It will not lower the weight of rooms that have been encountered before.
+/// Changes will be made later in development.
+/// For more details, see World::init() and GeneralGameData.json, room_layouts.
+/// </summary>
+void Game::ChangeLevel()
+{
+	/*SDL_Event e;
+	while (SDL_PollEvent(&e))
+	{
+		/*if (e.type == SDL_KEYDOWN)
+		{
+			switch (e.key.keysym.sym)
+			{
+			case SDLK_0:
+				TestWorld->init(0);
+				break;
+			case SDLK_1:
+				TestWorld->init(1);
+				break;
+			case SDLK_2:
+				TestWorld->init(2);
+				break;
+			case SDLK_3:
+				TestWorld->init(3);
+				break;
+			case SDLK_4:
+				TestWorld->init(4);
+				break;
+			case SDLK_5:
+				TestWorld->init(5);
+				break;
+			case SDLK_SPACE:
+					Player->getComponent<AnimationComponent>().fire();
+					break;
+			default:
+				break;
+			}
+		}*/
+	//}
+}

@@ -6,11 +6,13 @@
 #include <array>
 #include <limits>
 #include "CD_Vector2f.h"
-#include "SDL2-2.0.7\include\SDL.h"
+#include "SDL.h"
+
 class Tile
 {
 public:
 	Tile();
+
 	Tile(int xPos, int yPos, float w, float h, bool active);
 	~Tile();
 	bool m_active;
@@ -29,6 +31,7 @@ public:
 		m_h = std::numeric_limits<int>::infinity();
 		m_g = std::numeric_limits<int>::infinity();
 	}
+	void Render(SDL_Renderer * renderer);
 	float getF() { return m_f; };
 	float getH() { return m_h; };
 	float getG() { return m_g; };

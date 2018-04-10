@@ -1,0 +1,35 @@
+#include "SoundComponent.h"
+
+SoundComponent::SoundComponent()
+{
+
+}
+
+SoundComponent::~SoundComponent()
+{
+
+}
+
+void SoundComponent::AddSound(string Name, int Vol)
+{
+	string Path = "Assets/Sounds/" + Name + ".wav";
+
+	m_Sounds[Name] = Mix_LoadWAV(Path.c_str());
+
+	if (m_Sounds[Name] == nullptr)
+	{
+		cout << Mix_GetError() << endl;
+	}
+	else
+	{
+		cout << Name << ": Loaded successfully!" << endl;
+	}
+
+	m_Sounds[Name]->volume = Vol;
+}
+
+void SoundComponent::Play(string Name, int channel, int loop)
+{
+		Mix_PlayChannel(1, m_Sounds[Name], loop);
+}
+

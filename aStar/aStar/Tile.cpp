@@ -1,14 +1,14 @@
 #include "Tile.h"
 
 
-
 Tile::Tile()
 {
 }
 
+
 Tile::Tile(int xPos, int yPos, float w, float h, bool active)
 {
-	m_active = true;
+	m_active = active;
 	m_gridPosition.x = xPos;
 	m_gridPosition.y = yPos;
 	m_size.x = w;
@@ -28,7 +28,25 @@ Tile::Tile(int xPos, int yPos, float w, float h, bool active)
 	
 }
 
-
+void Tile::Render(SDL_Renderer * renderer)
+{
+	if (m_active)
+	{
+		SDL_SetRenderDrawColor(renderer, 180, 100, 180, 255);
+	}
+	else
+	{
+		SDL_SetRenderDrawColor(renderer, 100, 180, 180, 255);//change drawing colour if the tile is blocked or not
+	}
+	SDL_RenderFillRect(renderer, &rectangle);//draw rectangle
+	SDL_SetRenderDrawColor(renderer, 255,255, 255, 1);
+	SDL_RenderDrawRect(renderer, &rectangle);//draw rectangle
+	//draw outlines
+	//SDL_RenderDrawLine(renderer, rectangle.x, rectangle.y, rectangle.w + rectangle.x, rectangle.y);
+	//SDL_RenderDrawLine(renderer, rectangle.w + rectangle.x, rectangle.y, rectangle.w + rectangle.x, rectangle.y + rectangle.h);
+	//SDL_RenderDrawLine(renderer, rectangle.x, rectangle.y + rectangle.h, rectangle.w + rectangle.x, rectangle.y + rectangle.h);
+	//SDL_RenderDrawLine(renderer, rectangle.x, rectangle.y, rectangle.x, rectangle.y + rectangle.w);
+}
 Tile::~Tile()
 {
 }

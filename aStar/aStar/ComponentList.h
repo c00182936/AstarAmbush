@@ -1,0 +1,13 @@
+#pragma once
+#include "RenderComponent.h"
+#include "InputComponent.h"
+#include "MovementComponent.h"
+#include "SoundComponent.h"
+#include "SpriteComponent.h"
+#include "SpriteComponent.h"
+#include "AnimationComponent.h"
+#include "WeaponComponent.h"
+#include "StatComponent.h"
+#include "InputComponent.h"
+#include "AIComponent.h"
+#include "StatComponent.h"

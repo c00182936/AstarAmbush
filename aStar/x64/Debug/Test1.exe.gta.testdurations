@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Executable>C:\Users\C00195564\Desktop\argo\ARGO_2017_18_D\ARGO_2017_18_D\x64\Debug\Test1.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="TestCaseName.TestName" Duration="1" />
+    <TestDuration Test="AssetLoad.ARD23" Duration="1" />
+    <TestDuration Test="FontLoad.ARD23" Duration="1" />
+    <TestDuration Test="ARD23.AssetLoad" Duration="32" />
+    <TestDuration Test="ARD23.FontLoad" Duration="32" />
+    <TestDuration Test="ARD41.AStarTest" Duration="33" />
+  </TestDurations>
+</GtaTestDurations>
